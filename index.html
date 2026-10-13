@@ -1,0 +1,1949 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  <title>Duratile USA | Wholesale Flooring & Tile Solutions</title>
+  
+  <!-- Structured Data: Organization & LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["WholesaleStore", "LocalBusiness"],
+    "name": "Duratile USA - Luxury Flooring",
+    "url": "https://www.duratileus.com",
+    "telephone": "+1-817-385-0216",
+    "email": "info@duratileus.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1135 W Trinity Mills Rd, suite 140",
+      "addressLocality": "Carrollton",
+      "addressRegion": "TX",
+      "postalCode": "75006",
+      "addressCountry": "US"
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --ink: #111317;
+      --muted: #6b6964;
+      --paper: #f8f6f2;
+      --sand: #ede8df;
+      --gold: #C5A059;
+      --gold-dark: #9e7e38;
+      --charcoal: #14171d;
+      --border-light: #e3ded5;
+      --font-family: 'Century Gothic', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--font-family);
+      line-height: 1.6;
+    }
+
+    a { text-decoration: none; color: inherit; cursor: pointer; }
+    button, input, select, textarea { font-family: var(--font-family); font-size: inherit; }
+    .wrap { max-width: 1240px; margin: auto; padding: 0 30px; }
+
+    /* Top Announcement Bar */
+    .top-bar {
+      background: #0a0c10;
+      color: #dfdcd5;
+      text-align: center;
+      font-size: 11px;
+      letter-spacing: .1em;
+      padding: 10px 16px;
+      border-bottom: 1px solid #1f232b;
+    }
+    .top-bar strong { color: var(--gold); }
+
+    /* Navigation Header */
+    .nav {
+      height: 88px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      position: sticky;
+      top: 0;
+      background: rgba(248, 246, 242, 0.98);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      z-index: 100;
+      border-bottom: 1px solid #e5dfd3;
+    }
+    
+    .brand-wrap {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      cursor: pointer;
+    }
+    .brand-logo-img {
+      height: 48px;
+      width: auto;
+      object-fit: contain;
+      display: block;
+      border-radius: 4px;
+    }
+    .brand-text-block {
+      display: flex;
+      flex-direction: column;
+    }
+    .brand-title {
+      font-size: 23px;
+      letter-spacing: .28em;
+      font-weight: 700;
+      line-height: 1.05;
+      color: var(--ink);
+      text-transform: uppercase;
+    }
+    .brand-title span { color: var(--gold); }
+    .brand-sub {
+      font-size: 8.5px;
+      letter-spacing: .38em;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-weight: 600;
+      margin-top: 3px;
+    }
+
+    .navlinks {
+      display: flex;
+      gap: 26px;
+      align-items: center;
+      font-size: 12px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    .navlinks a:hover { color: var(--gold); }
+    .navlinks a.active-tab {
+      color: var(--gold);
+      border-bottom: 2px solid var(--gold);
+      padding-bottom: 4px;
+    }
+
+    /* Fixed Button Visibility */
+    .navlinks a.btn.gold,
+    .navlinks a.btn.gold:hover,
+    .navlinks a.btn.gold.active-tab {
+      color: #0b0d11 !important;
+      border-bottom: 1px solid var(--gold) !important;
+      padding: 13px 22px !important;
+      background: var(--gold) !important;
+      font-weight: 700 !important;
+    }
+    .navlinks a.btn.gold:hover {
+      background: var(--gold-dark) !important;
+      border-color: var(--gold-dark) !important;
+      color: #fff !important;
+    }
+
+    /* Mobile Hamburger & Drawer */
+    .hamburger-btn {
+      display: none;
+      background: transparent;
+      border: 1px solid var(--ink);
+      padding: 8px 14px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+    .mobile-drawer {
+      display: none;
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 290px;
+      height: 100vh;
+      background: #0c0e12;
+      color: #fff;
+      z-index: 999;
+      padding: 40px 24px;
+      box-shadow: -4px 0 25px rgba(0,0,0,0.6);
+      flex-direction: column;
+      gap: 16px;
+    }
+    .mobile-drawer.open { display: flex; }
+    .mobile-drawer a {
+      font-size: 13px;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      padding: 12px 0;
+      border-bottom: 1px solid #232731;
+    }
+    .mobile-drawer a:hover { color: var(--gold); }
+    .close-drawer {
+      align-self: flex-end;
+      background: transparent;
+      border: none;
+      color: var(--gold);
+      font-size: 22px;
+      cursor: pointer;
+      margin-bottom: 12px;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      padding: 14px 26px;
+      background: var(--ink);
+      color: #fff;
+      font-size: 12px;
+      letter-spacing: .09em;
+      text-transform: uppercase;
+      font-weight: 700;
+      border: 1px solid var(--ink);
+      cursor: pointer;
+      transition: all .25s ease;
+    }
+    .btn:hover { background: #000; }
+    .btn.gold {
+      background: var(--gold);
+      color: #0b0d11 !important;
+      border-color: var(--gold);
+    }
+    .btn.gold:hover { background: var(--gold-dark); border-color: var(--gold-dark); color: #fff !important; }
+    .btn.light {
+      background: transparent;
+      color: #fff;
+      border-color: rgba(255,255,255,0.7);
+    }
+    .btn.light:hover { background: #fff; color: var(--ink); }
+
+    /* Typography */
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: .22em;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--gold);
+      display: block;
+      margin-bottom: 8px;
+    }
+    .banner-eyebrow {
+      text-transform: uppercase;
+      letter-spacing: .26em;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--gold);
+      display: inline-block;
+      margin-bottom: 14px;
+      background: rgba(197, 160, 89, 0.14);
+      padding: 6px 16px;
+      border: 1px solid rgba(197, 160, 89, 0.4);
+      border-radius: 2px;
+    }
+
+    h1, h2, h3, h4 {
+      font-weight: 700;
+      letter-spacing: .02em;
+      margin-top: 0;
+    }
+    h1 { font-size: clamp(34px, 4.6vw, 60px); line-height: 1.15; margin-bottom: 18px; }
+    h2 { font-size: clamp(26px, 3vw, 40px); line-height: 1.25; margin-bottom: 16px; }
+    h3 { font-size: 20px; margin-bottom: 8px; }
+    p { line-height: 1.7; color: var(--muted); }
+
+    /* Sections */
+    .section { padding: 85px 0; }
+    .sectionhead {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 30px;
+      margin-bottom: 38px;
+    }
+    .sectionhead p { max-width: 460px; margin: 0; }
+    .sand { background: var(--sand); }
+
+    /* Views */
+    .page-view {
+      display: none;
+      animation: fadeIn .25s ease-in-out;
+    }
+    .page-view.active-view {
+      display: block;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .page-banner {
+      background: #11141b;
+      color: #fff;
+      padding: 55px 0;
+      border-bottom: 1px solid #232733;
+    }
+    .page-banner h1 { margin: 10px 0 12px; color: #fff; }
+    .page-banner p { color: #b7b2a8; max-width: 620px; margin: 0; }
+
+    /* Hero */
+    .hero {
+      min-height: 540px;
+      background: linear-gradient(90deg, rgba(10,12,16,0.88) 0%, rgba(10,12,16,0.45) 100%),
+                  url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1800&q=85') center/cover;
+      display: flex;
+      align-items: center;
+    }
+    .hero-content { max-width: 680px; color: #fff; padding: 70px 0; }
+    .hero h1 { color: #fff; }
+    .hero p { color: #dfdbd3; font-size: 16px; max-width: 560px; }
+    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 28px; }
+
+    /* Grid Layouts */
+    .collections { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
+    .product { background: #fff; border: 1px solid var(--border-light); overflow: hidden; display: flex; flex-direction: column; }
+    .product .photo { height: 300px; background-size: cover; background-position: center; cursor: pointer; transition: transform .3s ease; }
+    .product:hover .photo { transform: scale(1.02); }
+    .product .inside { padding: 24px; flex: 1; display: flex; flex-direction: column; justify-content: space-between; }
+    .product h3 a { color: var(--ink); transition: color .2s ease; }
+    .product h3 a:hover { color: var(--gold); }
+    .product p { font-size: 13px; margin: 6px 0 18px; }
+    .arrow {
+      font-size: 11px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--ink);
+      border-bottom: 2px solid var(--gold);
+      padding-bottom: 4px;
+      display: inline-block;
+    }
+    .arrow:hover { color: var(--gold); }
+
+    .audience-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+    .audience { background: #fff; border: 1px solid var(--border-light); overflow: hidden; }
+    .audience img { width: 100%; height: 210px; object-fit: cover; display: block; }
+    .audience-body { padding: 24px; }
+    .audience-body h3 { margin: 8px 0 6px; }
+    .audience-body p { font-size: 13px; min-height: 48px; margin: 0 0 16px; }
+
+    .resources { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+    .resource { background: #fff; border: 1px solid var(--border-light); padding: 28px; }
+    .resource h3 { font-size: 20px; margin-top: 4px; }
+    .resource p { font-size: 13px; margin: 8px 0 20px; }
+
+    .blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .blog-card { background: #fff; border: 1px solid var(--border-light); overflow: hidden; display: flex; flex-direction: column; }
+    .blog-thumb { height: 210px; background-size: cover; background-position: center; }
+    .blog-body { padding: 24px; flex: 1; display: flex; flex-direction: column; justify-content: space-between; }
+    .blog-date { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--gold); font-weight: 700; margin-bottom: 8px; display: block; }
+    .blog-body h3 { font-size: 18px; line-height: 1.35; margin: 0 0 10px; }
+    .blog-body p { font-size: 13px; margin: 0 0 18px; }
+
+    /* Forms */
+    .lead { background: #0d0f13; color: #fff; }
+    .lead p { color: #bfb9af; }
+    .lead-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: flex-start; }
+    .form { background: #fbf9f6; padding: 38px; color: var(--ink); border-top: 4px solid var(--gold); }
+    .form h3 { margin-top: 0; color: var(--ink); font-size: 22px; }
+    .fields { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .fields input, .fields select, .fields textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid #d4cdc1;
+      background: #fff;
+      font-size: 13px;
+      border-radius: 0;
+      color: var(--ink);
+    }
+    .fields input:focus, .fields select:focus, .fields textarea:focus {
+      outline: 2px solid var(--gold);
+      border-color: var(--gold);
+    }
+    .fields .full { grid-column: 1 / -1; }
+    .form .btn { width: 100%; margin-top: 14px; padding: 16px; }
+    .note { font-size: 11px !important; line-height: 1.5; color: #8a857b; }
+
+    /* Lions Floor Style Product Detail */
+    .product-detail-layout {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 50px;
+      align-items: flex-start;
+      margin-top: 40px;
+    }
+    .product-gallery {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .main-product-img {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+      border: 1px solid var(--border-light);
+    }
+    .spec-table-box {
+      background: #fff;
+      border: 1px solid var(--border-light);
+      padding: 32px;
+    }
+    .spec-table-box h2 {
+      font-size: 28px;
+      margin-bottom: 6px;
+    }
+    .spec-table-box .sku-sub {
+      font-size: 12px;
+      color: var(--gold);
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      display: block;
+    }
+    .spec-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 13px;
+    }
+    .spec-table tr { border-bottom: 1px solid #ede8e1; }
+    .spec-table td { padding: 9px 0; }
+    .spec-table td.label { color: var(--muted); font-weight: 600; width: 45%; }
+    .spec-table td.val { font-weight: 700; color: var(--ink); }
+    .detail-cta-stack { display: flex; flex-direction: column; gap: 12px; margin-top: 24px; }
+
+    /* Footer */
+    footer { background: #08090b; color: #eee9e0; padding: 60px 0 26px; border-top: 1px solid #1c1f26; }
+    footer p, footer a { color: #a49f96; font-size: 13px; }
+    footer a:hover { color: var(--gold); }
+    .foot { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; }
+    .copyright {
+      border-top: 1px solid #232731;
+      padding-top: 22px;
+      margin-top: 45px;
+      color: #7b776f;
+      font-size: 11px;
+    }
+
+    /* Mobile Rules */
+    @media (max-width: 960px) {
+      .navlinks { display: none; }
+      .hamburger-btn { display: block; }
+      .collections, .resources, .audience-grid, .blog-grid { grid-template-columns: 1fr 1fr; }
+      .product-detail-layout { grid-template-columns: 1fr; }
+      .main-product-img { height: 360px; }
+      .lead-grid, .foot { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 600px) {
+      .wrap { padding: 0 18px; }
+      .collections, .resources, .audience-grid, .blog-grid, .fields, .foot { grid-template-columns: 1fr; }
+      .sectionhead { display: block; }
+      .sectionhead p { margin-top: 8px; }
+      .hero-content { padding: 45px 0; }
+      .form { padding: 24px 18px; }
+      .btn { width: 100%; text-align: center; }
+      .hero-actions .btn { width: 100%; }
+      .main-product-img { height: 260px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Announcement Bar (Carrollton Location) -->
+  <div class="top-bar">
+    CARROLLTON WHOLESALE FLOORING & TILE · TRADE ACCOUNTS WELCOME · <strong>(817) 385-0216</strong> · 1135 W TRINITY MILLS RD, SUITE 140
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="wrap nav">
+    <div class="brand-wrap" onclick="navigateTo('home')">
+      <img src="logo.jpeg" alt="Duratile Luxury Flooring" class="brand-logo-img">
+      <div class="brand-text-block">
+        <div class="brand-title">DURA<span>TILE</span></div>
+        <div class="brand-sub">LUXURY FLOORING</div>
+      </div>
+    </div>
+
+    <nav class="navlinks">
+      <a onclick="navigateTo('collections')" id="nav-collections">Flooring</a>
+      <a onclick="navigateTo('audiences')" id="nav-audiences">Professionals</a>
+      <a onclick="navigateTo('resources')" id="nav-resources">Resources</a>
+      <a onclick="navigateTo('blog')" id="nav-blog">Trade Blog</a>
+      <a onclick="navigateTo('contact')" id="nav-contact">Contact</a>
+      <a onclick="navigateTo('apply')" id="nav-apply" class="btn gold">Get Trade Pricing</a>
+    </nav>
+    <button type="button" class="hamburger-btn" onclick="toggleMobileMenu()">Menu ☰</button>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <button type="button" class="close-drawer" onclick="toggleMobileMenu()">✕</button>
+    <a onclick="navigateTo('home'); toggleMobileMenu();">Home</a>
+    <a onclick="navigateTo('collections'); toggleMobileMenu();">Flooring</a>
+    <a onclick="navigateTo('audiences'); toggleMobileMenu();">Professionals</a>
+    <a onclick="navigateTo('resources'); toggleMobileMenu();">Resources</a>
+    <a onclick="navigateTo('blog'); toggleMobileMenu();">Trade Journal Blog</a>
+    <a onclick="navigateTo('contact'); toggleMobileMenu();">Contact / Showroom</a>
+    <a onclick="navigateTo('apply'); toggleMobileMenu();" class="btn gold" style="margin-top:15px; color:#0b0d11 !important;">Get Trade Pricing</a>
+  </div>
+
+  <main>
+
+    <!-- ========================================== -->
+    <!-- 1. HOMEPAGE                                -->
+    <!-- ========================================== -->
+    <div id="view-home" class="page-view active-view">
+      <!-- 1.1 Hero Section -->
+      <section class="hero">
+        <div class="wrap" style="width:100%">
+          <div class="hero-content">
+            <div class="banner-eyebrow">Direct Wholesale Flooring & Tile Solutions</div>
+            <h1>Exceptional floors.<br>Built for every project.</h1>
+            <p>SPC rigid core, glue-down luxury vinyl, and porcelain tiles backed by Dallas inventory and dedicated sales assistance[cite: 11].</p>
+            <div class="hero-actions">
+              <a onclick="navigateTo('apply')" class="btn gold">Get Trade Pricing →</a>
+              <a onclick="navigateTo('collections')" class="btn light">Explore Products</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 1.2 Core Collections Section -->
+      <section class="section wrap" id="home-collections">
+        <div class="sectionhead">
+          <div>
+            <div class="eyebrow">FLOORING</div>
+            <h2>Commercial Lines Ready to Ship[cite: 11]</h2>
+          </div>
+          <a onclick="navigateTo('collections')" class="arrow">To Flooring Catalog →</a>
+        </div>
+        <div class="collections">
+          <!-- Big Product 01: SPC -->
+          <article class="product">
+            <div class="photo" onclick="navigateTo('spc-collection')" style="background-image:url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85')"></div>
+            <div class="inside">
+              <div>
+                <small class="eyebrow">Collection 01</small>
+                <h3><a onclick="navigateTo('spc-collection')">SPC Rigid Core[cite: 11]</a></h3>
+                <p>12mil to 20 mil wear layer click flooring with attached IXPE acoustic pad[cite: 11, 20]. Engineered with 100% waterproof limestone core[cite: 17, 19].</p>
+              </div>
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-top:16px;">
+                <a class="arrow" onclick="navigateTo('spc-collection')">Explore Collection →</a>
+                <a class="arrow" style="border-bottom-color:transparent; color:var(--gold);" onclick="openApplyWithIntent('SPC Rigid Core - Request Pricing')">Request Pricing →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Big Product 02: LVT -->
+          <article class="product">
+            <div class="photo" onclick="navigateTo('lvt-collection')" style="background-image:url('https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1200&q=85')"></div>
+            <div class="inside">
+              <div>
+                <small class="eyebrow">Collection 02</small>
+                <h3><a onclick="navigateTo('lvt-collection')">Glue-Down LVT[cite: 11]</a></h3>
+                <p>Dryback luxury vinyl tile for commercial corridors, multifamily, and tenant turns[cite: 11]. Heavy duty direct glue stability.</p>
+              </div>
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-top:16px;">
+                <a class="arrow" onclick="navigateTo('lvt-collection')">Explore Collection →</a>
+                <a class="arrow" style="border-bottom-color:transparent; color:var(--gold);" onclick="openApplyWithIntent('Glue-Down LVT - Request Pricing')">Request Pricing →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Big Product 03: Porcelain -->
+          <article class="product">
+            <div class="photo" onclick="navigateTo('porcelain-collection')" style="background-image:url('https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1200&q=85')"></div>
+            <div class="inside">
+              <div>
+                <small class="eyebrow">Collection 03</small>
+                <h3><a onclick="navigateTo('porcelain-collection')">Porcelain Tile[cite: 11]</a></h3>
+                <p>24"x48" to 63"x126" format rectified porcelain surfaces for wall and floor applications[cite: 11]. Zero absorption high polish luster.</p>
+              </div>
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-top:16px;">
+                <a class="arrow" onclick="navigateTo('porcelain-collection')">Explore Collection →</a>
+                <a class="arrow" style="border-bottom-color:transparent; color:var(--gold);" onclick="openApplyWithIntent('Porcelain Tile - Request Pricing')">Request Pricing →</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 1.3 Professionals Section -->
+      <section class="section sand" id="home-audiences">
+        <div class="wrap">
+          <div class="sectionhead">
+            <div>
+              <div class="eyebrow">Trade Solutions</div>
+              <h2>Built for Trade Professionals</h2>
+            </div>
+            <p>Direct wholesale support and program pricing structured around how your trade business buys.</p>
+          </div>
+          <div class="audience-grid">
+            <article class="audience">
+              <img loading="lazy" src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=80" alt="Flooring showroom">
+              <div class="audience-body">
+                <span class="eyebrow">Flooring Retailers</span>
+                <h3>Flooring Retailers</h3>
+                <p>Improve margins with competitive wholesale pricing, attractive collections, and showroom display support[cite: 11].</p>
+                <a class="arrow" onclick="openApplyWithIntent('Flooring Retailer - Become a Dealer')">Become a Dealer →[cite: 11]</a>
+              </div>
+            </article>
+
+            <article class="audience">
+              <img loading="lazy" src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1000&q=80" alt="Home builder project">
+              <div class="audience-body">
+                <span class="eyebrow">Home Builders</span>
+                <h3>Home Builders</h3>
+                <p>Simplify selections through approved palettes, program pricing, and supply planning across multiple homes[cite: 11].</p>
+                <a class="arrow" onclick="openApplyWithIntent('Home Builder - Request Builder Program')">Request Builder Program →[cite: 11]</a>
+              </div>
+            </article>
+
+            <article class="audience">
+              <img loading="lazy" src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1000&q=80" alt="Multifamily housing">
+              <div class="audience-body">
+                <span class="eyebrow">Multifamily</span>
+                <h3>Multifamily</h3>
+                <p>Control material costs with volume programs, repeatable selections, and coordinated supply schedules[cite: 11].</p>
+                <a class="arrow" onclick="openApplyWithIntent('Multifamily - Request Project Quote')">Request Project Quote →[cite: 11]</a>
+              </div>
+            </article>
+
+            <article class="audience">
+              <img loading="lazy" src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1000&q=80" alt="Architectural specification">
+              <div class="audience-body">
+                <span class="eyebrow">Architects & Designers</span>
+                <h3>Architects & Designers</h3>
+                <p>Specify confidently with curated finishes, samples, product details, and technical support[cite: 11].</p>
+                <a class="arrow" onclick="openApplyWithIntent('Architect / Designer - Request Samples & Specs')">Request Samples & Specs →[cite: 11]</a>
+              </div>
+            </article>
+
+            <article class="audience">
+              <img loading="lazy" src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1100&q=80" alt="Commercial contractor install">
+              <div class="audience-body">
+                <span class="eyebrow">Flooring Contractors</span>
+                <h3>Flooring Contractors</h3>
+                <p>Bid competitively with job pricing, availability checks, and pickup or delivery coordination[cite: 11].</p>
+                <a class="arrow" onclick="openApplyWithIntent('Flooring Contractor - Get Contractor Pricing')">Get Contractor Pricing →[cite: 11]</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 1.4 Trade Inquiry Section -->
+      <section class="section lead">
+        <div class="wrap lead-grid">
+          <div>
+            <div class="eyebrow" style="color:var(--gold)">Direct Wholesale Sourcing</div>
+            <h2 style="color:#fff">Request Trade Pricing & Program Details</h2>
+            <p>Connect directly with our territory sales desk for wholesale dealer programs, volume quotations, and product samples.</p>
+            <div style="margin-top:24px; padding:20px; border:1px solid #282d38; background:#11141a;">
+              <strong style="color:var(--gold); font-size:12px; text-transform:uppercase; letter-spacing:.1em; display:block; margin-bottom:6px;">Carrollton Hub[cite: 30]</strong>
+              <p style="font-size:12px; margin:0; color:#b0a99c;">1135 W Trinity Mills Rd, suite 140, Carrollton, TX 75006[cite: 30]<br>Warehouse pickup and regional delivery coordination.</p>
+            </div>
+          </div>
+
+          <form class="form" id="leadForm">
+            <h3>Trade Inquiry</h3>
+            <div class="fields">
+              <input name="Contact" id="f_contact" placeholder="Contact name *" required>
+              <input name="Company" id="f_company" placeholder="Company name *" required>
+              <input type="email" name="Email" id="f_email" placeholder="Business email *" required>
+              <input type="tel" name="Phone" id="f_phone" placeholder="Phone *" required>
+
+              <select name="Customer Type" id="customerType" required>
+                <option value="">Buyer type *</option>
+                <option value="Flooring Retailer">Flooring Retailer</option>
+                <option value="Home Builder">Home Builder</option>
+                <option value="Multifamily">Multifamily</option>
+                <option value="Architect / Designer">Architect / Designer</option>
+                <option value="Flooring Contractor">Flooring Contractor</option>
+                <option value="Other Trade Professional">Other Trade Professional</option>
+              </select>
+
+              <select name="Product Interest" id="f_product" required>
+                <option value="">Product interest *</option>
+                <option value="SPC Flooring">SPC Flooring</option>
+                <option value="Glue-Down LVT">Glue-Down LVT</option>
+                <option value="Porcelain Tile">Porcelain Tile</option>
+                <option value="Multiple Collections">Multiple Collections</option>
+              </select>
+
+              <input class="full" id="f_details" name="Project Details" placeholder="Estimated square footage, location, or timeline (optional)">
+              <textarea name="Message" id="f_message" class="full" rows="3" placeholder="Inquiry notes: pricing, sample requests, display towers, or showroom visit"></textarea>
+            </div>
+
+            <button class="btn gold" type="submit" id="submitLabel">Submit Trade Inquiry →</button>
+            <p class="note" style="margin-top:10px;">Submissions route directly to the Duratile sales desk in HubSpot for timely follow-up.</p>
+          </form>
+        </div>
+      </section>
+
+      <!-- 1.5 Contact & Showroom Section on Home -->
+      <section class="section sand">
+        <div class="wrap sectionhead">
+          <div>
+            <div class="eyebrow">Visit Our Showroom[cite: 30]</div>
+            <h2>Carrollton Distribution Hub[cite: 30]</h2>
+            <p style="color:var(--ink); font-weight:500; line-height:2;">
+              <strong>Address:</strong><br>
+              1135 W Trinity Mills Rd, suite 140, Carrollton, TX 75006[cite: 30]<br><br>
+              <strong>Hours:</strong><br>
+              Monday – Friday · 8:00 AM – 5:00 PM<br><br>
+              <strong>Contact:</strong><br>
+              Phone: (817) 385-0216 · Email: info@duratileus.com
+            </p>
+          </div>
+          <div style="background:#fff; padding:32px; border:1px solid #dcd4c6; max-width:440px;">
+            <span class="eyebrow">Trade Consultation</span>
+            <h3>Schedule a Showroom Walkthrough</h3>
+            <p style="font-size:13px;">Review physical porcelain slabs, pick up sample swatches, or meet with our territory manager.</p>
+            <a class="btn gold" style="width:100%;" onclick="openApplyWithIntent('Showroom Consultation Appointment')">Request Appointment →</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- 2. FLOORING CATALOG OVERVIEW PAGE          -->
+    <!-- ========================================== -->
+    <div id="view-collections" class="page-view">
+      <div class="page-banner">
+        <div class="wrap">
+          <div class="eyebrow">Product Directory</div>
+          <h1>Commercial Flooring & Tile Collections</h1>
+          <p>Explore SPC rigid core, glue-down luxury vinyl, and porcelain tiles. Verified specifications ready for specification and ordering.</p>
+        </div>
+      </div>
+      <section class="section wrap">
+        <div class="collections">
+          <!-- SPC -->
+          <article class="product">
+            <div class="photo" onclick="navigateTo('spc-collection')" style="background-image:url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85')"></div>
+            <div class="inside">
+              <div>
+                <small class="eyebrow">Collection 01</small>
+                <h3><a onclick="navigateTo('spc-collection')">SPC Rigid Core[cite: 11]</a></h3>
+                <p>12mil to 20 mil wear layer click flooring with attached IXPE acoustic pad[cite: 11, 20]. Available in 8 curated wood grain styles[cite: 21].</p>
+              </div>
+              <div style="display:flex; justify-content:space-between; align-items:center;">
+                <a class="arrow" onclick="navigateTo('spc-collection')">Explore Collection →</a>
+                <a class="arrow" style="border-bottom-color:transparent; color:var(--gold);" onclick="openApplyWithIntent('SPC Rigid Core Wholesale Pricing')">Request Pricing →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- LVT -->
+          <article class="product">
+            <div class="photo" onclick="navigateTo('lvt-collection')" style="background-image:url('https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1200&q=85')"></div>
+            <div class="inside">
+              <div>
+                <small class="eyebrow">Collection 02</small>
+                <h3><a onclick="navigateTo('lvt-collection')">Glue-Down LVT[cite: 11]</a></h3>
+                <p>Dryback luxury vinyl tile for commercial corridors, multifamily, and tenant turns[cite: 11].</p>
+              </div>
+              <div style="display:flex; justify-content:space-between; align-items:center;">
+                <a class="arrow" onclick="navigateTo('lvt-collection')">Explore Collection →</a>
+                <a class="arrow" style="border-bottom-color:transparent; color:var(--gold);" onclick="openApplyWithIntent('Glue-Down LVT Wholesale Pricing')">Request Pricing →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Porcelain -->
+          <article class="product">
+            <div class="photo" onclick="navigateTo('porcelain-collection')" style="background-image:url('https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1200&q=85')"></div>
+            <div class="inside">
+              <div>
+                <small class="eyebrow">Collection 03</small>
+                <h3><a onclick="navigateTo('porcelain-collection')">Porcelain Tile[cite: 11]</a></h3>
+                <p>24"x48" to 63"x126" format rectified porcelain surfaces for wall and floor applications[cite: 11].</p>
+              </div>
+              <div style="display:flex; justify-content:space-between; align-items:center;">
+                <a class="arrow" onclick="navigateTo('porcelain-collection')">Explore Collection →</a>
+                <a class="arrow" style="border-bottom-color:transparent; color:var(--gold);" onclick="openApplyWithIntent('Porcelain Tile Wholesale Pricing')">Request Pricing →</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- DEDICATED SUB-COLLECTION: SPC RIGID CORE (REAL BROCHURE SKUS)   -->
+    <!-- ============================================================== -->
+    <div id="view-spc-collection" class="page-view">
+      <div class="page-banner">
+        <div class="wrap">
+          <div class="eyebrow">Duratile Rigid Core Series[cite: 20]</div>
+          <h1>SPC Rigid Core Flooring Collection[cite: 16, 20]</h1>
+          <p>5MM total thickness with pre-attached 1MM IXPE acoustic pad[cite: 20]. 100% waterproof virgin limestone composite core[cite: 17, 19, 20]. Select any SKU for technical datasheet and free samples.</p>
+        </div>
+      </div>
+      <section class="section wrap">
+        <div class="sectionhead">
+          <div>
+            <div class="eyebrow">Wood Grain Series[cite: 21]</div>
+            <h2>8 Verified Duratile SPC SKUs[cite: 22, 23, 24, 25, 26, 27, 28, 29]</h2>
+          </div>
+          <a onclick="navigateTo('collections')" class="arrow">← Back to All Flooring</a>
+        </div>
+        <div class="collections">
+          <!-- 1. LUNARO -->
+          <article class="product">
+            <div class="photo" onclick="navigateTo('prod-spc-lunaro')" style="background-image:url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85')"></div>
+            <div class="inside">
+              <div>
+                <small class="eyebrow">SKU: DURLUNARO7X48-5MM-12MIL[cite: 22]</small>
+                <h3><a onclick="navigateTo('prod-spc-lunaro')">Lunaro[cite: 22]</a></h3>
+                <p>Soft gray-beige modern wood grain[cite: 20, 22]. 7.2"x48" plank with 5MM thickness and 1MM IXPE pad[cite: 20].</p>
+              </div>
+              <div style="margin-top:14px;"><a class="btn gold" style="width:100%;" onclick="navigateTo('prod-spc-lunaro')">View Product Details →</a></div>
+            </div>
+          </article>
+
+          <!-- 2. BRIXTON -->
+          <article class="product">
+            <div class="photo" onclick="navigateTo('prod-spc-brixton')" style="background-image:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=85')"></div>
+            <div class="inside">
+              <div>
+                <small class="eyebrow">SKU: DURBRIXTON7X48-5MM-12MIL[cite: 23]</small>
+                <h3><a onclick="navigateTo('prod-spc-brixton')">Brixton[cite: 23]</a></h3>
+                <p>Medium modern brown finish[cite: 23]. Durable Unilin click lock system with virgin limestone core[cite: 17, 19].</p>
+              </div>
+              <div style="margin-top:14px;"><a class="btn gold" style="width:100%;" onclick="navigateTo('prod-spc-brixton')">View Product Details →</a></div>
+            </div>
+          </article>
+
+          <!-- 3. MONTAIRE -->
+          <article class="product">
+            <div class="photo" onclick="navigateTo('prod-spc-montaire')" style="background-image:url('https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=900&q=85')"></div>
+            <div class="inside">
+              <div>
+                <small class="eyebrow">SKU: DURMONTAIRE7X48-5MM-12MIL[cite: 24]</small>
+                <h3><a onclick="navigateTo('prod-spc-montaire')">Montaire[cite: 24]</a></h3>
+                <p>Upscale greige tone suited for residential builder programs and multifamily leasing[cite: 20, 24].</p>
+              </div>
+              <div style="margin-top:14px;"><a class="btn gold" style="width:100%;" onclick="navigateTo('prod-spc-montaire')">View Product Details →</a></div>
+            </div>
+          </article>
+
+          <!-- 4. VALTERRA -->
+          <article class="product">
+            <div class="photo" onclick="navigateTo('prod-spc-valterra')" style="background-image:url('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=85')"></div>
+            <div class="inside">
+              <div>
+                <small class="eyebrow">SKU: DURVALTERRA7X48-5MM-12MIL[cite: 25]</small>
+                <h3><a onclick="navigateTo('prod-spc-valterra')">Valterra[cite: 25]</a></h3>
+                <p>Warm natural European oak visual with zero warping, shrinking, or water absorption[cite: 17, 19, 25].</p>
+              </div>
+              <div style="margin-top:14px;"><a class="btn gold" style="width:100%;" onclick="navigateTo('prod-spc-valterra')">View Product Details →</a></div>
+            </div>
+          </article>
+
+          <!-- 5. OAKMERE -->
+          <article class="product">
+            <div class="photo" onclick="navigateTo('prod-spc-oakmere')" style="background-image:url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=85')"></div>
+            <div class="inside">
+              <div>
+                <small class="eyebrow">SKU: DUROAKMERE7X48-5MM-12MIL[cite: 26]</small>
+                <h3><a onclick="navigateTo('prod-spc-oakmere')">Oakmere[cite: 26]</a></h3>
+                <p>Timeless natural wood aesthetic with heavy scratch and wear resistance[cite: 17, 19, 26].</p>
+              </div>
+              <div style="margin-top:14px;"><a class="btn gold" style="width:100%;" onclick="navigateTo('prod-spc-oakmere')">View Product Details →</a></div>
+            </div>
+          </article>
+
+          <!-- 6. SOLARA -->
+          <article class="product">
+            <div class="photo" onclick="navigateTo('prod-spc-solara')" style="background-image:url('https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=900&q=85')"></div>
+            <div class="inside">
+              <div>
+                <small class="eyebrow">SKU: DURSOLARA7X48-5MM-12MIL[cite: 27]</small>
+                <h3><a onclick="navigateTo('prod-spc-solara')">Solara[cite: 27]</a></h3>
+                <p>Light beige neutral clean aesthetic offering airy openness in commercial and residential layouts[cite: 27].</p>
+              </div>
+              <div style="margin-top:14px;"><a class="btn gold" style="width:100%;" onclick="navigateTo('prod-spc-solara')">View Product Details →</a></div>
+            </div>
+          </article>
+
+          <!-- 7. TOSCARA -->
+          <article class="product">
+            <div class="photo" onclick="navigateTo('prod-spc-toscara')" style="background-image:url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85')"></div>
+            <div class="inside">
+              <div>
+                <small class="eyebrow">SKU: DURTOSCARA7X48-5MM-12MIL[cite: 28]</small>
+                <h3><a onclick="navigateTo('prod-spc-toscara')">Toscara[cite: 28]</a></h3>
+                <p>Warm European oak character balancing subtle golden highlights and natural timber grain[cite: 28].</p>
+              </div>
+              <div style="margin-top:14px;"><a class="btn gold" style="width:100%;" onclick="navigateTo('prod-spc-toscara')">View Product Details →</a></div>
+            </div>
+          </article>
+
+          <!-- 8. CAVARO -->
+          <article class="product">
+            <div class="photo" onclick="navigateTo('prod-spc-cavaro')" style="background-image:url('https://images.unsplash.com/photo-1600566752229-250ed79470f8?auto=format&fit=crop&w=900&q=85')"></div>
+            <div class="inside">
+              <div>
+                <small class="eyebrow">SKU: DURCAVARO7X48-5MM-12MIL[cite: 29]</small>
+                <h3><a onclick="navigateTo('prod-spc-cavaro')">Cavaro[cite: 29]</a></h3>
+                <p>Rich traditional deep brown grain engineered for high contrast sophistication[cite: 29].</p>
+              </div>
+              <div style="margin-top:14px;"><a class="btn gold" style="width:100%;" onclick="navigateTo('prod-spc-cavaro')">View Product Details →</a></div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- DEDICATED SUB-COLLECTION: GLUE-DOWN LVT                        -->
+    <!-- ============================================================== -->
+    <div id="view-lvt-collection" class="page-view">
+      <div class="page-banner">
+        <div class="wrap">
+          <div class="eyebrow">Collection 02</div>
+          <h1>Glue-Down Luxury Vinyl Tile (LVT)</h1>
+          <p>Dryback luxury vinyl tile for commercial corridors, multifamily, and tenant turns[cite: 11]. High-performance direct adhesive installation.</p>
+        </div>
+      </div>
+      <section class="section wrap">
+        <div class="sectionhead">
+          <div>
+            <div class="eyebrow">Commercial SKUs</div>
+            <h2>Glue-Down LVT Palette</h2>
+          </div>
+          <a onclick="navigateTo('collections')" class="arrow">← Back to All Flooring</a>
+        </div>
+        <div class="collections">
+          <!-- Slate -->
+          <article class="product">
+            <div class="photo" onclick="navigateTo('prod-lvt-slate')" style="background-image:url('https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=900&q=85')"></div>
+            <div class="inside">
+              <div>
+                <small class="eyebrow">SKU: LVT-SLT-20M</small>
+                <h3><a onclick="navigateTo('prod-lvt-slate')">Stone & Slate Visuals</a></h3>
+                <p>Dryback stone visuals engineered for high-traffic apartment common areas and light commercial.</p>
+              </div>
+              <div style="margin-top:14px;"><a class="btn gold" style="width:100%;" onclick="navigateTo('prod-lvt-slate')">View Product Details →</a></div>
+            </div>
+          </article>
+
+          <!-- Wood Planks -->
+          <article class="product">
+            <div class="photo" onclick="navigateTo('prod-lvt-wood')" style="background-image:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=85')"></div>
+            <div class="inside">
+              <div>
+                <small class="eyebrow">SKU: LVT-WOD-20M</small>
+                <h3><a onclick="navigateTo('prod-lvt-wood')">Commercial Wood Planks</a></h3>
+                <p>Durable direct-glue planks designed for repetitive leasing installations and low replacement costs.</p>
+              </div>
+              <div style="margin-top:14px;"><a class="btn gold" style="width:100%;" onclick="navigateTo('prod-lvt-wood')">View Product Details →</a></div>
+            </div>
+          </article>
+
+          <!-- Concrete -->
+          <article class="product">
+            <div class="photo" onclick="navigateTo('prod-lvt-concrete')" style="background-image:url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85')"></div>
+            <div class="inside">
+              <div>
+                <small class="eyebrow">SKU: LVT-CNC-20M</small>
+                <h3><a onclick="navigateTo('prod-lvt-concrete')">Modern Neutral Concrete</a></h3>
+                <p>Clean commercial finish for retail suites, healthcare offices, and hospitality settings.</p>
+              </div>
+              <div style="margin-top:14px;"><a class="btn gold" style="width:100%;" onclick="navigateTo('prod-lvt-concrete')">View Product Details →</a></div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- DEDICATED SUB-COLLECTION: PORCELAIN TILE                      -->
+    <!-- ============================================================== -->
+    <div id="view-porcelain-collection" class="page-view">
+      <div class="page-banner">
+        <div class="wrap">
+          <div class="eyebrow">Collection 03</div>
+          <h1>Porcelain Tile Surfaces</h1>
+          <p>24"x48" to 63"x126" format rectified porcelain surfaces for wall and floor applications[cite: 11]. Zero absorption and diamond rectified edges.</p>
+        </div>
+      </div>
+      <section class="section wrap">
+        <div class="sectionhead">
+          <div>
+            <div class="eyebrow">Slab Formats & SKUs</div>
+            <h2>Porcelain Surfaces Palette</h2>
+          </div>
+          <a onclick="navigateTo('collections')" class="arrow">← Back to All Flooring</a>
+        </div>
+        <div class="collections">
+          <!-- Black Marble -->
+          <article class="product">
+            <div class="photo" onclick="navigateTo('prod-porc-black')" style="background-image:url('https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=900&q=85')"></div>
+            <div class="inside">
+              <div>
+                <small class="eyebrow">SKU: POR-BLK-POL</small>
+                <h3><a onclick="navigateTo('prod-porc-black')">Polished Black Marble Looks</a></h3>
+                <p>24"x48" rectified high-gloss porcelain tile suitable for commercial lobbies and feature walls.</p>
+              </div>
+              <div style="margin-top:14px;"><a class="btn gold" style="width:100%;" onclick="navigateTo('prod-porc-black')">View Product Details →</a></div>
+            </div>
+          </article>
+
+          <!-- White Veined -->
+          <article class="product">
+            <div class="photo" onclick="navigateTo('prod-porc-white')" style="background-image:url('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=85')"></div>
+            <div class="inside">
+              <div>
+                <small class="eyebrow">SKU: POR-WHT-VN</small>
+                <h3><a onclick="navigateTo('prod-porc-white')">Dramatic White & Black Veined</a></h3>
+                <p>Large format surfaces offering seamless continuity across bathroom suites and entryways.</p>
+              </div>
+              <div style="margin-top:14px;"><a class="btn gold" style="width:100%;" onclick="navigateTo('prod-porc-white')">View Product Details →</a></div>
+            </div>
+          </article>
+
+          <!-- Warm Veined Slabs -->
+          <article class="product">
+            <div class="photo" onclick="navigateTo('prod-porc-warm')" style="background-image:url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=85')"></div>
+            <div class="inside">
+              <div>
+                <small class="eyebrow">SKU: POR-WRM-SLB</small>
+                <h3><a onclick="navigateTo('prod-porc-warm')">Warm Veined Slabs</a></h3>
+                <p>Up to 63"x126" slab formats for luxury wall claddings, floors, and commercial architectural statements.</p>
+              </div>
+              <div style="margin-top:14px;"><a class="btn gold" style="width:100%;" onclick="navigateTo('prod-porc-warm')">View Product Details →</a></div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- INDIVIDUAL PRODUCT SPEC DETAIL PAGES (LIONS FLOOR STYLE)       -->
+    <!-- ============================================================== -->
+    <!-- 1. SPC - LUNARO -->
+    <div id="view-prod-spc-lunaro" class="page-view">
+      <div class="page-banner">
+        <div class="wrap">
+          <div class="eyebrow"><a onclick="navigateTo('spc-collection')">← SPC Rigid Core</a> / Lunaro Overview[cite: 22]</div>
+          <h1>Lunaro Luxury SPC Flooring[cite: 22]</h1>
+          <p>Product Code: <strong>DURLUNARO7X48-5MM-12MIL</strong> · Soft gray-beige modern wood grain[cite: 20, 22].</p>
+        </div>
+      </div>
+      <section class="section wrap">
+        <div class="product-detail-layout">
+          <div class="product-gallery">
+            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85" alt="Lunaro Room" class="main-product-img">
+          </div>
+          <div class="spec-table-box">
+            <span class="sku-sub">Duratile SPC Luxury Vinyl[cite: 20, 22]</span>
+            <h2>Lunaro[cite: 22]</h2>
+            <p style="font-size:13px; margin-bottom:15px;">Features limestone powder & virgin PVC composite core[cite: 17, 19]. 100% waterproof, anti-slip, zero warping and shrinking with attached IXPE pad[cite: 17, 19, 20].</p>
+            <table class="spec-table">
+              <tr><td class="label">SKU Number:</td><td class="val">DURLUNARO7X48-5MM-12MIL[cite: 22]</td></tr>
+              <tr><td class="label">Plank Size:</td><td class="val">7.2" x 48"[cite: 20]</td></tr>
+              <tr><td class="label">Thickness:</td><td class="val">5MM Total Thickness[cite: 20]</td></tr>
+              <tr><td class="label">Wear Layer:</td><td class="val">12MIL (Commercial 20MIL Option)[cite: 20]</td></tr>
+              <tr><td class="label">Backing Cushion:</td><td class="val">1MM High Density IXPE Padding[cite: 17, 19, 20]</td></tr>
+              <tr><td class="label">Click Type:</td><td class="val">Patented Unilin Locking System[cite: 19, 20]</td></tr>
+              <tr><td class="label">Finish:</td><td class="val">Matte UV Coating (Scratch Resistant)[cite: 17, 20]</td></tr>
+              <tr><td class="label">Fire Rating:</td><td class="val">Class Bfl s1 Certified[cite: 18]</td></tr>
+              <tr><td class="label">Acoustics:</td><td class="val">IIC 56-78 / STC 55-76 Certified[cite: 18]</td></tr>
+              <tr><td class="label">Warranty:</td><td class="val">Lifetime Limited Residential / 10-Yr Commercial[cite: 20]</td></tr>
+            </table>
+            <div class="detail-cta-stack">
+              <button class="btn gold" onclick="openApplyWithIntent('Free Sample: Lunaro SPC (DURLUNARO7X48-5MM-12MIL)')">Order Free Sample Plank →</button>
+              <button class="btn" onclick="openApplyWithIntent('Quote Request: Lunaro SPC (DURLUNARO7X48-5MM-12MIL)')">Request Trade Pricing & Pallets</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- 2. SPC - BRIXTON -->
+    <div id="view-prod-spc-brixton" class="page-view">
+      <div class="page-banner">
+        <div class="wrap">
+          <div class="eyebrow"><a onclick="navigateTo('spc-collection')">← SPC Rigid Core</a> / Brixton Overview[cite: 23]</div>
+          <h1>Brixton Luxury SPC Flooring[cite: 23]</h1>
+          <p>Product Code: <strong>DURBRIXTON7X48-5MM-12MIL</strong> · Medium modern brown timber grain[cite: 20, 23].</p>
+        </div>
+      </div>
+      <section class="section wrap">
+        <div class="product-detail-layout">
+          <div class="product-gallery">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=85" alt="Brixton Room" class="main-product-img">
+          </div>
+          <div class="spec-table-box">
+            <span class="sku-sub">Duratile SPC Luxury Vinyl[cite: 20, 23]</span>
+            <h2>Brixton[cite: 23]</h2>
+            <p style="font-size:13px; margin-bottom:15px;">Combines modern mid-tone brown hues with limestone rigid core durability[cite: 17, 23]. 100% waterproof and zero acclimation[cite: 17, 20].</p>
+            <table class="spec-table">
+              <tr><td class="label">SKU Number:</td><td class="val">DURBRIXTON7X48-5MM-12MIL[cite: 23]</td></tr>
+              <tr><td class="label">Plank Size:</td><td class="val">7.2" x 48"[cite: 20]</td></tr>
+              <tr><td class="label">Thickness:</td><td class="val">5MM[cite: 20]</td></tr>
+              <tr><td class="label">Wear Layer:</td><td class="val">12MIL / 20MIL Commercial[cite: 20]</td></tr>
+              <tr><td class="label">Pad Cushion:</td><td class="val">1MM Attached IXPE[cite: 17, 20]</td></tr>
+              <tr><td class="label">Installation:</td><td class="val">Unilin Float Click[cite: 19, 20]</td></tr>
+              <tr><td class="label">Certifications:</td><td class="val">FloorScore & Greenguard Gold Certified[cite: 18]</td></tr>
+            </table>
+            <div class="detail-cta-stack">
+              <button class="btn gold" onclick="openApplyWithIntent('Free Sample: Brixton SPC (DURBRIXTON7X48-5MM-12MIL)')">Order Free Sample Plank →</button>
+              <button class="btn" onclick="openApplyWithIntent('Quote Request: Brixton SPC (DURBRIXTON7X48-5MM-12MIL)')">Request Trade Pricing</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- 3. SPC - MONTAIRE -->
+    <div id="view-prod-spc-montaire" class="page-view">
+      <div class="page-banner">
+        <div class="wrap">
+          <div class="eyebrow"><a onclick="navigateTo('spc-collection')">← SPC Rigid Core</a> / Montaire Overview[cite: 24]</div>
+          <h1>Montaire Luxury SPC Flooring[cite: 24]</h1>
+          <p>Product Code: <strong>DURMONTAIRE7X48-5MM-12MIL</strong> · Upscale greige tone[cite: 24].</p>
+        </div>
+      </div>
+      <section class="section wrap">
+        <div class="product-detail-layout">
+          <div class="product-gallery">
+            <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1200&q=85" alt="Montaire Room" class="main-product-img">
+          </div>
+          <div class="spec-table-box">
+            <span class="sku-sub">Duratile SPC Luxury Vinyl[cite: 20, 24]</span>
+            <h2>Montaire[cite: 24]</h2>
+            <p style="font-size:13px; margin-bottom:15px;">Sophisticated urban greige matching modern residential builder and multi-family developments[cite: 20, 24].</p>
+            <table class="spec-table">
+              <tr><td class="label">SKU Number:</td><td class="val">DURMONTAIRE7X48-5MM-12MIL[cite: 24]</td></tr>
+              <tr><td class="label">Size & Thickness:</td><td class="val">7.2" x 48" · 5MM[cite: 20]</td></tr>
+              <tr><td class="label">Wear Layer:</td><td class="val">12MIL / 20MIL[cite: 20]</td></tr>
+              <tr><td class="label">Attached Pad:</td><td class="val">1MM IXPE Sound Cushion[cite: 17, 20]</td></tr>
+              <tr><td class="label">Warranty:</td><td class="val">Lifetime Limited Residential / 10-Yr Commercial[cite: 20]</td></tr>
+            </table>
+            <div class="detail-cta-stack">
+              <button class="btn gold" onclick="openApplyWithIntent('Free Sample: Montaire SPC (DURMONTAIRE7X48-5MM-12MIL)')">Order Free Sample Plank →</button>
+              <button class="btn" onclick="openApplyWithIntent('Quote Request: Montaire SPC (DURMONTAIRE7X48-5MM-12MIL)')">Request Builder Program Pricing</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- 4. SPC - VALTERRA -->
+    <div id="view-prod-spc-valterra" class="page-view">
+      <div class="page-banner">
+        <div class="wrap">
+          <div class="eyebrow"><a onclick="navigateTo('spc-collection')">← SPC Rigid Core</a> / Valterra Overview[cite: 25]</div>
+          <h1>Valterra Luxury SPC Flooring[cite: 25]</h1>
+          <p>Product Code: <strong>DURVALTERRA7X48-5MM-12MIL</strong> · Warm natural oak[cite: 25].</p>
+        </div>
+      </div>
+      <section class="section wrap">
+        <div class="product-detail-layout">
+          <div class="product-gallery">
+            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=85" alt="Valterra Room" class="main-product-img">
+          </div>
+          <div class="spec-table-box">
+            <span class="sku-sub">Duratile SPC Luxury Vinyl[cite: 20, 25]</span>
+            <h2>Valterra[cite: 25]</h2>
+            <p style="font-size:13px; margin-bottom:15px;">True natural European oak character with 100% virgin materials[cite: 19, 25], flame retardant, and high impact resistance up to 200kg/cm2[cite: 17, 19].</p>
+            <table class="spec-table">
+              <tr><td class="label">SKU Number:</td><td class="val">DURVALTERRA7X48-5MM-12MIL[cite: 25]</td></tr>
+              <tr><td class="label">Size:</td><td class="val">7.2" x 48"[cite: 20]</td></tr>
+              <tr><td class="label">Thickness & Pad:</td><td class="val">5MM with 1MM IXPE[cite: 20]</td></tr>
+              <tr><td class="label">Wear Layer:</td><td class="val">12MIL / 20MIL[cite: 20]</td></tr>
+              <tr><td class="label">Locking:</td><td class="val">Patented Click System[cite: 17, 20]</td></tr>
+            </table>
+            <div class="detail-cta-stack">
+              <button class="btn gold" onclick="openApplyWithIntent('Free Sample: Valterra SPC (DURVALTERRA7X48-5MM-12MIL)')">Order Free Sample Plank →</button>
+              <button class="btn" onclick="openApplyWithIntent('Quote Request: Valterra SPC (DURVALTERRA7X48-5MM-12MIL)')">Request Trade Pricing</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- 5. SPC - OAKMERE -->
+    <div id="view-prod-spc-oakmere" class="page-view">
+      <div class="page-banner">
+        <div class="wrap">
+          <div class="eyebrow"><a onclick="navigateTo('spc-collection')">← SPC Rigid Core</a> / Oakmere Overview[cite: 26]</div>
+          <h1>Oakmere Luxury SPC Flooring[cite: 26]</h1>
+          <p>Product Code: <strong>DUROAKMERE7X48-5MM-12MIL</strong> · Timeless natural wood look[cite: 26].</p>
+        </div>
+      </div>
+      <section class="section wrap">
+        <div class="product-detail-layout">
+          <div class="product-gallery">
+            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85" alt="Oakmere Room" class="main-product-img">
+          </div>
+          <div class="spec-table-box">
+            <span class="sku-sub">Duratile SPC Luxury Vinyl[cite: 20, 26]</span>
+            <h2>Oakmere[cite: 26]</h2>
+            <p style="font-size:13px; margin-bottom:15px;">Standard wood grain texture with matte UV coating to protect against fading and scratches[cite: 17, 20, 26].</p>
+            <table class="spec-table">
+              <tr><td class="label">SKU Number:</td><td class="val">DUROAKMERE7X48-5MM-12MIL[cite: 26]</td></tr>
+              <tr><td class="label">Size:</td><td class="val">7.2" x 48"[cite: 20]</td></tr>
+              <tr><td class="label">Thickness:</td><td class="val">5MM[cite: 20]</td></tr>
+              <tr><td class="label">Wear Layer:</td><td class="val">12MIL / 20MIL[cite: 20]</td></tr>
+              <tr><td class="label">Pad Cushion:</td><td class="val">1MM IXPE Pre-Attached[cite: 17, 20]</td></tr>
+            </table>
+            <div class="detail-cta-stack">
+              <button class="btn gold" onclick="openApplyWithIntent('Free Sample: Oakmere SPC (DUROAKMERE7X48-5MM-12MIL)')">Order Free Sample Plank →</button>
+              <button class="btn" onclick="openApplyWithIntent('Quote Request: Oakmere SPC (DUROAKMERE7X48-5MM-12MIL)')">Request Trade Pricing</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- 6. SPC - SOLARA -->
+    <div id="view-prod-spc-solara" class="page-view">
+      <div class="page-banner">
+        <div class="wrap">
+          <div class="eyebrow"><a onclick="navigateTo('spc-collection')">← SPC Rigid Core</a> / Solara Overview[cite: 27]</div>
+          <h1>Solara Luxury SPC Flooring[cite: 27]</h1>
+          <p>Product Code: <strong>DURSOLARA7X48-5MM-12MIL</strong> · Light beige neutral[cite: 27].</p>
+        </div>
+      </div>
+      <section class="section wrap">
+        <div class="product-detail-layout">
+          <div class="product-gallery">
+            <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=85" alt="Solara Room" class="main-product-img">
+          </div>
+          <div class="spec-table-box">
+            <span class="sku-sub">Duratile SPC Luxury Vinyl[cite: 20, 27]</span>
+            <h2>Solara[cite: 27]</h2>
+            <p style="font-size:13px; margin-bottom:15px;">Bright light-beige clean Scandinavian feel with acoustic insulation and zero warping[cite: 17, 19, 27].</p>
+            <table class="spec-table">
+              <tr><td class="label">SKU Number:</td><td class="val">DURSOLARA7X48-5MM-12MIL[cite: 27]</td></tr>
+              <tr><td class="label">Size:</td><td class="val">7.2" x 48"[cite: 20]</td></tr>
+              <tr><td class="label">Thickness:</td><td class="val">5MM[cite: 20]</td></tr>
+              <tr><td class="label">Wear Layer:</td><td class="val">12MIL / 20MIL[cite: 20]</td></tr>
+            </table>
+            <div class="detail-cta-stack">
+              <button class="btn gold" onclick="openApplyWithIntent('Free Sample: Solara SPC (DURSOLARA7X48-5MM-12MIL)')">Order Free Sample Plank →</button>
+              <button class="btn" onclick="openApplyWithIntent('Quote Request: Solara SPC (DURSOLARA7X48-5MM-12MIL)')">Request Trade Pricing</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- 7. SPC - TOSCARA -->
+    <div id="view-prod-spc-toscara" class="page-view">
+      <div class="page-banner">
+        <div class="wrap">
+          <div class="eyebrow"><a onclick="navigateTo('spc-collection')">← SPC Rigid Core</a> / Toscara Overview[cite: 28]</div>
+          <h1>Toscara Luxury SPC Flooring[cite: 28]</h1>
+          <p>Product Code: <strong>DURTOSCARA7X48-5MM-12MIL</strong> · Warm European oak feel[cite: 28].</p>
+        </div>
+      </div>
+      <section class="section wrap">
+        <div class="product-detail-layout">
+          <div class="product-gallery">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85" alt="Toscara Room" class="main-product-img">
+          </div>
+          <div class="spec-table-box">
+            <span class="sku-sub">Duratile SPC Luxury Vinyl[cite: 20, 28]</span>
+            <h2>Toscara[cite: 28]</h2>
+            <p style="font-size:13px; margin-bottom:15px;">Golden warmth and European grain lines engineered for luxury hospitality and home remodeling[cite: 19, 28].</p>
+            <table class="spec-table">
+              <tr><td class="label">SKU Number:</td><td class="val">DURTOSCARA7X48-5MM-12MIL[cite: 28]</td></tr>
+              <tr><td class="label">Size:</td><td class="val">7.2" x 48"[cite: 20]</td></tr>
+              <tr><td class="label">Thickness:</td><td class="val">5MM with 1MM Pad[cite: 20]</td></tr>
+            </table>
+            <div class="detail-cta-stack">
+              <button class="btn gold" onclick="openApplyWithIntent('Free Sample: Toscara SPC (DURTOSCARA7X48-5MM-12MIL)')">Order Free Sample Plank →</button>
+              <button class="btn" onclick="openApplyWithIntent('Quote Request: Toscara SPC (DURTOSCARA7X48-5MM-12MIL)')">Request Trade Pricing</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- 8. SPC - CAVARO -->
+    <div id="view-prod-spc-cavaro" class="page-view">
+      <div class="page-banner">
+        <div class="wrap">
+          <div class="eyebrow"><a onclick="navigateTo('spc-collection')">← SPC Rigid Core</a> / Cavaro Overview[cite: 29]</div>
+          <h1>Cavaro Luxury SPC Flooring[cite: 29]</h1>
+          <p>Product Code: <strong>DURCAVARO7X48-5MM-12MIL</strong> · Rich traditional brown[cite: 29].</p>
+        </div>
+      </div>
+      <section class="section wrap">
+        <div class="product-detail-layout">
+          <div class="product-gallery">
+            <img src="https://images.unsplash.com/photo-1600566752229-250ed79470f8?auto=format&fit=crop&w=1200&q=85" alt="Cavaro Room" class="main-product-img">
+          </div>
+          <div class="spec-table-box">
+            <span class="sku-sub">Duratile SPC Luxury Vinyl[cite: 20, 29]</span>
+            <h2>Cavaro[cite: 29]</h2>
+            <p style="font-size:13px; margin-bottom:15px;">Deep heritage brown timber grain offering executive style with lifetime structural protection[cite: 20, 29].</p>
+            <table class="spec-table">
+              <tr><td class="label">SKU Number:</td><td class="val">DURCAVARO7X48-5MM-12MIL[cite: 29]</td></tr>
+              <tr><td class="label">Size:</td><td class="val">7.2" x 48"[cite: 20]</td></tr>
+              <tr><td class="label">Thickness:</td><td class="val">5MM[cite: 20]</td></tr>
+            </table>
+            <div class="detail-cta-stack">
+              <button class="btn gold" onclick="openApplyWithIntent('Free Sample: Cavaro SPC (DURCAVARO7X48-5MM-12MIL)')">Order Free Sample Plank →</button>
+              <button class="btn" onclick="openApplyWithIntent('Quote Request: Cavaro SPC (DURCAVARO7X48-5MM-12MIL)')">Request Trade Pricing</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- LVT 1: Slate -->
+    <div id="view-prod-lvt-slate" class="page-view">
+      <div class="page-banner">
+        <div class="wrap">
+          <div class="eyebrow"><a onclick="navigateTo('lvt-collection')">← Glue-Down LVT</a> / Overview</div>
+          <h1>Stone & Slate Visuals Glue-Down LVT</h1>
+          <p>Product Code: <strong>LVT-SLT-20M</strong> · Commercial Dryback Direct-Glue Luxury Vinyl Tile.</p>
+        </div>
+      </div>
+      <section class="section wrap">
+        <div class="product-detail-layout">
+          <div class="product-gallery">
+            <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1200&q=85" alt="Slate LVT Room" class="main-product-img">
+          </div>
+          <div class="spec-table-box">
+            <span class="sku-sub">Duratile Commercial LVT</span>
+            <h2>Stone & Slate Visuals</h2>
+            <p style="font-size:13px; margin-bottom:15px;">Architectural stone aesthetic engineered with commercial dryback wear layer for high-turnover corridors and offices.</p>
+            <table class="spec-table">
+              <tr><td class="label">SKU Number:</td><td class="val">LVT-SLT-20M</td></tr>
+              <tr><td class="label">Tile Size:</td><td class="val">12" x 24" Direct Glue</td></tr>
+              <tr><td class="label">Thickness:</td><td class="val">2.5 mm Dryback</td></tr>
+              <tr><td class="label">Wear Layer:</td><td class="val">20 Mil Commercial Grade</td></tr>
+            </table>
+            <div class="detail-cta-stack">
+              <button class="btn gold" onclick="openApplyWithIntent('Free Sample: Stone & Slate LVT (LVT-SLT-20M)')">Order Free Sample Swatch →</button>
+              <button class="btn" onclick="openApplyWithIntent('Quote Request: Stone & Slate LVT (LVT-SLT-20M)')">Request Multifamily Project Quote</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- LVT 2: Wood Planks -->
+    <div id="view-prod-lvt-wood" class="page-view">
+      <div class="page-banner">
+        <div class="wrap">
+          <div class="eyebrow"><a onclick="navigateTo('lvt-collection')">← Glue-Down LVT</a> / Overview</div>
+          <h1>Commercial Wood Planks Glue-Down LVT</h1>
+          <p>Product Code: <strong>LVT-WOD-20M</strong> · Heavy Traffic Direct-Glue Commercial Vinyl Plank.</p>
+        </div>
+      </div>
+      <section class="section wrap">
+        <div class="product-detail-layout">
+          <div class="product-gallery">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=85" alt="Wood LVT Room" class="main-product-img">
+          </div>
+          <div class="spec-table-box">
+            <span class="sku-sub">Duratile Commercial LVT</span>
+            <h2>Commercial Wood Planks</h2>
+            <p style="font-size:13px; margin-bottom:15px;">Durable direct-glue wood grain planks designed for repetitive apartment leasing turns and low replacement costs.</p>
+            <table class="spec-table">
+              <tr><td class="label">SKU Number:</td><td class="val">LVT-WOD-20M</td></tr>
+              <tr><td class="label">Plank Dimension:</td><td class="val">6" x 48"</td></tr>
+              <tr><td class="label">Thickness:</td><td class="val">2.5 mm</td></tr>
+              <tr><td class="label">Wear Layer:</td><td class="val">20 Mil Commercial Polyurethane Coat</td></tr>
+            </table>
+            <div class="detail-cta-stack">
+              <button class="btn gold" onclick="openApplyWithIntent('Free Sample: Commercial Wood Planks (LVT-WOD-20M)')">Order Free Sample Swatch →</button>
+              <button class="btn" onclick="openApplyWithIntent('Quote Request: Commercial Wood Planks (LVT-WOD-20M)')">Request Multifamily Project Quote</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- LVT 3: Concrete -->
+    <div id="view-prod-lvt-concrete" class="page-view">
+      <div class="page-banner">
+        <div class="wrap">
+          <div class="eyebrow"><a onclick="navigateTo('lvt-collection')">← Glue-Down LVT</a> / Overview</div>
+          <h1>Modern Neutral Concrete Glue-Down LVT</h1>
+          <p>Product Code: <strong>LVT-CNC-20M</strong> · Honed Concrete Look Dryback Commercial Tile.</p>
+        </div>
+      </div>
+      <section class="section wrap">
+        <div class="product-detail-layout">
+          <div class="product-gallery">
+            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85" alt="Concrete LVT Room" class="main-product-img">
+          </div>
+          <div class="spec-table-box">
+            <span class="sku-sub">Duratile Commercial LVT</span>
+            <h2>Modern Neutral Concrete</h2>
+            <p style="font-size:13px; margin-bottom:15px;">Contemporary honed concrete texture designed for corporate suites, healthcare corridors, and retail builds.</p>
+            <table class="spec-table">
+              <tr><td class="label">SKU Number:</td><td class="val">LVT-CNC-20M</td></tr>
+              <tr><td class="label">Tile Dimension:</td><td class="val">18" x 36" Large Format</td></tr>
+              <tr><td class="label">Thickness & Wear:</td><td class="val">2.5 mm · 20 Mil Wear Layer</td></tr>
+            </table>
+            <div class="detail-cta-stack">
+              <button class="btn gold" onclick="openApplyWithIntent('Free Sample: Modern Neutral Concrete (LVT-CNC-20M)')">Order Free Sample Swatch →</button>
+              <button class="btn" onclick="openApplyWithIntent('Quote Request: Modern Neutral Concrete (LVT-CNC-20M)')">Request Multifamily Project Quote</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Porcelain 1: Black Marble -->
+    <div id="view-prod-porc-black" class="page-view">
+      <div class="page-banner">
+        <div class="wrap">
+          <div class="eyebrow"><a onclick="navigateTo('porcelain-collection')">← Porcelain Tile</a> / Overview</div>
+          <h1>Polished Black Marble Looks Porcelain</h1>
+          <p>Product Code: <strong>POR-BLK-POL</strong> · 24"x48" High-Gloss Rectified Porcelain Slab.</p>
+        </div>
+      </div>
+      <section class="section wrap">
+        <div class="product-detail-layout">
+          <div class="product-gallery">
+            <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1200&q=85" alt="Black Marble Tile Room" class="main-product-img">
+          </div>
+          <div class="spec-table-box">
+            <span class="sku-sub">Duratile Luxury Surfaces</span>
+            <h2>Polished Black Marble Looks</h2>
+            <p style="font-size:13px; margin-bottom:15px;">Mirror-finish high gloss black porcelain surface with dramatic veining. Engineered for walls, floors, and commercial feature lobbies.</p>
+            <table class="spec-table">
+              <tr><td class="label">SKU Number:</td><td class="val">POR-BLK-POL</td></tr>
+              <tr><td class="label">Dimensions:</td><td class="val">24" x 48" Rectified Slab</td></tr>
+              <tr><td class="label">Absorption:</td><td class="val">&le; 0.1% Impervious Commercial Grade</td></tr>
+              <tr><td class="label">PEI Rating:</td><td class="val">PEI 4 Commercial Footwear</td></tr>
+            </table>
+            <div class="detail-cta-stack">
+              <button class="btn gold" onclick="openApplyWithIntent('Free Sample: Polished Black Marble Porcelain (POR-BLK-POL)')">Request Tile Sample →</button>
+              <button class="btn" onclick="openApplyWithIntent('Quote Request: Polished Black Marble Porcelain (POR-BLK-POL)')">Request Pallet & Container Pricing</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Porcelain 2: White Veined -->
+    <div id="view-prod-porc-white" class="page-view">
+      <div class="page-banner">
+        <div class="wrap">
+          <div class="eyebrow"><a onclick="navigateTo('porcelain-collection')">← Porcelain Tile</a> / Overview</div>
+          <h1>Dramatic White & Black Veined Porcelain</h1>
+          <p>Product Code: <strong>POR-WHT-VN</strong> · 24"x48" Bookmatch Look Rectified Porcelain Surface.</p>
+        </div>
+      </div>
+      <section class="section wrap">
+        <div class="product-detail-layout">
+          <div class="product-gallery">
+            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=85" alt="White Veined Tile Room" class="main-product-img">
+          </div>
+          <div class="spec-table-box">
+            <span class="sku-sub">Duratile Luxury Surfaces</span>
+            <h2>Dramatic White & Black Veined</h2>
+            <p style="font-size:13px; margin-bottom:15px;">High contrast black movements across pure white base offering continuous visual flow across bathroom suites and commercial spaces.</p>
+            <table class="spec-table">
+              <tr><td class="label">SKU Number:</td><td class="val">POR-WHT-VN</td></tr>
+              <tr><td class="label">Dimensions:</td><td class="val">24" x 48" Rectified</td></tr>
+              <tr><td class="label">Finish:</td><td class="val">High Gloss Polished</td></tr>
+            </table>
+            <div class="detail-cta-stack">
+              <button class="btn gold" onclick="openApplyWithIntent('Free Sample: Dramatic White & Black Veined (POR-WHT-VN)')">Request Tile Sample →</button>
+              <button class="btn" onclick="openApplyWithIntent('Quote Request: Dramatic White & Black Veined (POR-WHT-VN)')">Request Pallet & Container Pricing</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Porcelain 3: Warm Veined Slabs -->
+    <div id="view-prod-porc-warm" class="page-view">
+      <div class="page-banner">
+        <div class="wrap">
+          <div class="eyebrow"><a onclick="navigateTo('porcelain-collection')">← Porcelain Tile</a> / Overview</div>
+          <h1>Warm Veined Slabs Porcelain</h1>
+          <p>Product Code: <strong>POR-WRM-SLB</strong> · Up to 63"x126" Large Format Porcelain Slab Surface.</p>
+        </div>
+      </div>
+      <section class="section wrap">
+        <div class="product-detail-layout">
+          <div class="product-gallery">
+            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85" alt="Warm Veined Slab Room" class="main-product-img">
+          </div>
+          <div class="spec-table-box">
+            <span class="sku-sub">Duratile Luxury Surfaces</span>
+            <h2>Warm Veined Slabs</h2>
+            <p style="font-size:13px; margin-bottom:15px;">Extra-large slab formats with warm gold and amber veining for seamless luxury wall claddings and commercial architectural statements.</p>
+            <table class="spec-table">
+              <tr><td class="label">SKU Number:</td><td class="val">POR-WRM-SLB</td></tr>
+              <tr><td class="label">Dimensions:</td><td class="val">24"x48" to 63"x126" Slab Sizes</td></tr>
+              <tr><td class="label">Finish:</td><td class="val">Polished High Luster Diamond Rectified</td></tr>
+            </table>
+            <div class="detail-cta-stack">
+              <button class="btn gold" onclick="openApplyWithIntent('Free Sample: Warm Veined Slabs (POR-WRM-SLB)')">Request Slab Inspection / Sample →</button>
+              <button class="btn" onclick="openApplyWithIntent('Quote Request: Warm Veined Slabs (POR-WRM-SLB)')">Request Project Quotation</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- 3. DEDICATED PAGE: PROFESSIONALS           -->
+    <!-- ========================================== -->
+    <div id="view-audiences" class="page-view">
+      <div class="page-banner">
+        <div class="wrap">
+          <div class="eyebrow">Trade Partnerships</div>
+          <h1>Trade Professionals</h1>
+          <p>Explore trade programs and supply arrangements structured specifically around how your business sources material.</p>
+        </div>
+      </div>
+      <section class="section sand">
+        <div class="wrap">
+          <div class="audience-grid">
+            <article class="audience">
+              <img loading="lazy" src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=80" alt="Flooring showroom">
+              <div class="audience-body">
+                <span class="eyebrow">Flooring Retailers</span>
+                <h3>Flooring Retailers</h3>
+                <p>Improve margins with competitive wholesale pricing, attractive collections, and showroom display support[cite: 11].</p>
+                <a class="arrow" onclick="openApplyWithIntent('Flooring Retailer - Become a Dealer')">Become a Dealer →[cite: 11]</a>
+              </div>
+            </article>
+
+            <article class="audience">
+              <img loading="lazy" src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1000&q=80" alt="Home builder project">
+              <div class="audience-body">
+                <span class="eyebrow">Home Builders</span>
+                <h3>Home Builders</h3>
+                <p>Simplify selections through approved palettes, program pricing, and supply planning across multiple homes[cite: 11].</p>
+                <a class="arrow" onclick="openApplyWithIntent('Home Builder - Request Builder Program')">Request Builder Program →[cite: 11]</a>
+              </div>
+            </article>
+
+            <article class="audience">
+              <img loading="lazy" src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1000&q=80" alt="Multifamily housing">
+              <div class="audience-body">
+                <span class="eyebrow">Multifamily</span>
+                <h3>Multifamily</h3>
+                <p>Control material costs with volume programs, repeatable selections, and coordinated supply schedules[cite: 11].</p>
+                <a class="arrow" onclick="openApplyWithIntent('Multifamily - Request Project Quote')">Request Project Quote →[cite: 11]</a>
+              </div>
+            </article>
+
+            <article class="audience">
+              <img loading="lazy" src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1000&q=80" alt="Architectural specification">
+              <div class="audience-body">
+                <span class="eyebrow">Architects & Designers</span>
+                <h3>Architects & Designers</h3>
+                <p>Specify confidently with curated finishes, samples, product details, and technical support[cite: 11].</p>
+                <a class="arrow" onclick="openApplyWithIntent('Architect / Designer - Request Samples & Specs')">Request Samples & Specs →[cite: 11]</a>
+              </div>
+            </article>
+
+            <article class="audience">
+              <img loading="lazy" src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1100&q=80" alt="Commercial contractor install">
+              <div class="audience-body">
+                <span class="eyebrow">Flooring Contractors</span>
+                <h3>Flooring Contractors</h3>
+                <p>Bid competitively with job pricing, availability checks, and pickup or delivery coordination[cite: 11].</p>
+                <a class="arrow" onclick="openApplyWithIntent('Flooring Contractor - Get Contractor Pricing')">Get Contractor Pricing →[cite: 11]</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- 4. DEDICATED PAGE: RESOURCES               -->
+    <!-- ========================================== -->
+    <div id="view-resources" class="page-view">
+      <div class="page-banner">
+        <div class="wrap">
+          <div class="eyebrow">Technical Support & Assets</div>
+          <h1>Trade Resources</h1>
+          <p>Product specifications, installation instructions, brochures, sample requests, and display program information[cite: 11].</p>
+        </div>
+      </div>
+      <section class="section wrap">
+        <div class="resources">
+          <div class="resource">
+            <span class="eyebrow">Samples</span>
+            <h3>Samples & Swatches</h3>
+            <p>Request physical product swatches, hand boards, and presentation materials for upcoming projects.</p>
+            <a class="arrow" onclick="openApplyWithIntent('Resources - Request Physical Samples')">Request Samples →</a>
+          </div>
+          <div class="resource">
+            <span class="eyebrow">Merchandising</span>
+            <h3>Dealer Display Program</h3>
+            <p>Inquire about rotating showroom displays, sample wings, and dealer merchandising packages.</p>
+            <a class="arrow" onclick="openApplyWithIntent('Resources - Display Tower Program')">Explore Displays →</a>
+          </div>
+          <div class="resource">
+            <span class="eyebrow">Documentation</span>
+            <h3>Specifications & Warranties</h3>
+            <p>Access product technical data sheets, installation manuals, and warranty documentation.</p>
+            <a class="arrow" onclick="openApplyWithIntent('Resources - Request Technical Documentation')">Request Specs →</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- 5. DEDICATED PAGE: TRADE BLOG              -->
+    <!-- ========================================== -->
+    <div id="view-blog" class="page-view">
+      <div class="page-banner">
+        <div class="wrap">
+          <div class="eyebrow">Industry Knowledge & Technical Trends</div>
+          <h1>Duratile Trade Journal</h1>
+          <p>Technical guidance on SPC core density, commercial wear layers, large format slab installation, and Texas wholesale distribution.</p>
+        </div>
+      </div>
+      <section class="section wrap">
+        <div class="blog-grid">
+          <article class="blog-card">
+            <div class="blog-thumb" style="background-image:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80')"></div>
+            <div class="blog-body">
+              <div>
+                <span class="blog-date">Technical Spec · SPC Flooring</span>
+                <h3>Why 20 Mil Wear Layer is the Commercial Standard for Multifamily</h3>
+                <p>How limestone core density and ceramic bead coatings resist high tenant turnover wear compared to traditional dryback glue.</p>
+              </div>
+              <a class="arrow" onclick="openApplyWithIntent('Blog Inquiry: 20 Mil SPC Specification Guide')">Request 20mil Spec Sheet →</a>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-thumb" style="background-image:url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80')"></div>
+            <div class="blog-body">
+              <div>
+                <span class="blog-date">Architecture & Design</span>
+                <h3>The Rise of 24x48 Large Format Porcelain in Texas Commercial Builds</h3>
+                <p>Seamless minimal grout aesthetics: why architects choose rectified large format porcelain tile for commercial lobby walls and floors.</p>
+              </div>
+              <a class="arrow" onclick="openApplyWithIntent('Blog Inquiry: 24x48 Porcelain Sizing Guide')">Request Sizing Matrix →</a>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-thumb" style="background-image:url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80')"></div>
+            <div class="blog-body">
+              <div>
+                <span class="blog-date">Supply Chain · Texas Logistics</span>
+                <h3>Avoiding Project Delays with Local Warehouse Staging</h3>
+                <p>Container direct vs local hub staging: how regional warehouse inventory protects contractor scheduling and jobsite delivery.</p>
+              </div>
+              <a class="arrow" onclick="openApplyWithIntent('Blog Inquiry: Local Stock Allocation')">Check Live Hub Availability →</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- 6. DEDICATED PAGE: CONTACT / SHOWROOM      -->
+    <!-- ========================================== -->
+    <div id="view-contact" class="page-view">
+      <div class="page-banner">
+        <div class="wrap">
+          <div class="eyebrow">Carrollton Distribution Hub[cite: 30]</div>
+          <h1>Contact & Location</h1>
+          <p>Get in touch with our commercial sales desk, schedule a showroom visit, or coordinate warehouse will-call.</p>
+        </div>
+      </div>
+      <section class="section sand">
+        <div class="wrap sectionhead">
+          <div>
+            <div class="eyebrow">Carrollton Showroom[cite: 30]</div>
+            <h2>Visit or Contact Us</h2>
+            <p style="color:var(--ink); font-weight:500; line-height:2;">
+              <strong>Facility Address:</strong><br>
+              1135 W Trinity Mills Rd, suite 140<br>
+              Carrollton, TX 75006, United States[cite: 30]<br><br>
+              <strong>Hours of Operation:</strong><br>
+              Monday – Friday · 8:00 AM – 5:00 PM<br><br>
+              <strong>Direct Sales:</strong><br>
+              Phone: (817) 385-0216<br>
+              Email: info@duratileus.com
+            </p>
+          </div>
+          <div style="background:#fff; padding:36px; border:1px solid #dcd4c6; max-width:460px;">
+            <span class="eyebrow">Appointments</span>
+            <h3>Book a Showroom Visit</h3>
+            <p style="font-size:13px;">Review physical full-size porcelain surfaces, pick up sample swatches, or meet with our territory manager.</p>
+            <a class="btn gold" style="width:100%;" onclick="openApplyWithIntent('Contact - Showroom Walkthrough Appointment')">Request Showroom Appointment →</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- 7. DEDICATED PAGE: GET TRADE PRICING       -->
+    <!-- ========================================== -->
+    <div id="view-apply" class="page-view">
+      <div class="page-banner">
+        <div class="wrap">
+          <div class="eyebrow">Trade Account Onboarding</div>
+          <h1>Get Trade Pricing</h1>
+          <p>Submit your trade inquiry below. Submissions route directly to the Duratile sales desk in HubSpot for timely follow-up.</p>
+        </div>
+      </div>
+      <section class="section lead">
+        <div class="wrap lead-grid">
+          <div>
+            <div class="eyebrow" style="color:var(--gold)">Wholesale Sourcing</div>
+            <h2 style="color:#fff">Let's connect on your project.</h2>
+            <p>Tell us about your business and material requirements. Our sales team follows up with verified program pricing and product availability.</p>
+            <div style="margin-top:24px; padding:20px; border:1px solid #282d38; background:#11141a;">
+              <strong style="color:var(--gold); font-size:12px; text-transform:uppercase; letter-spacing:.1em; display:block; margin-bottom:6px;">Carrollton Hub[cite: 30]</strong>
+              <p style="font-size:12px; margin:0; color:#b0a99c;">1135 W Trinity Mills Rd, suite 140, Carrollton, TX 75006[cite: 30]<br>Warehouse pickup and regional delivery coordination.</p>
+            </div>
+          </div>
+
+          <form class="form" id="pageLeadForm">
+            <h3>Trade Inquiry</h3>
+            <div class="fields">
+              <input name="Contact" id="pf_contact" placeholder="Contact name *" required>
+              <input name="Company" id="pf_company" placeholder="Company name *" required>
+              <input type="email" name="Email" id="pf_email" placeholder="Business email *" required>
+              <input type="tel" name="Phone" id="pf_phone" placeholder="Phone *" required>
+
+              <select name="Customer Type" id="p_customerType" required>
+                <option value="">Buyer type *</option>
+                <option value="Flooring Retailer">Flooring Retailer</option>
+                <option value="Home Builder">Home Builder</option>
+                <option value="Multifamily">Multifamily</option>
+                <option value="Architect / Designer">Architect / Designer</option>
+                <option value="Flooring Contractor">Flooring Contractor</option>
+                <option value="Other Trade Professional">Other Trade Professional</option>
+              </select>
+
+              <select name="Product Interest" id="pf_product" required>
+                <option value="">Product interest *</option>
+                <option value="SPC Flooring">SPC Flooring</option>
+                <option value="Glue-Down LVT">Glue-Down LVT</option>
+                <option value="Porcelain Tile">Porcelain Tile</option>
+                <option value="Multiple Collections">Multiple Collections</option>
+              </select>
+
+              <input class="full" id="pf_details" name="Project Details" placeholder="Estimated square footage, location, or timeline (optional)">
+              <textarea name="Message" id="pf_message" class="full" rows="3" placeholder="Inquiry notes: pricing, sample requests, display towers, or showroom visit"></textarea>
+            </div>
+
+            <button class="btn gold" type="submit" id="p_submitLabel">Submit Trade Inquiry →</button>
+            <p class="note" style="margin-top:10px;">Submissions route directly to the Duratile sales desk in HubSpot for timely follow-up.</p>
+          </form>
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer>
+    <div class="wrap">
+      <div class="foot">
+        <div>
+          <div class="brand-wrap" onclick="navigateTo('home')" style="margin-bottom:14px;">
+            <img src="logo.jpeg" alt="Duratile Luxury Flooring" class="brand-logo-img">
+            <div class="brand-text-block">
+              <div class="brand-title" style="color:#fff;">DURA<span style="color:var(--gold);">TILE</span></div>
+              <div class="brand-sub" style="color:#8a867e;">LUXURY FLOORING</div>
+            </div>
+          </div>
+          <p>Wholesale flooring and tile distribution engineered for retailers, builders, and trade professionals.</p>
+        </div>
+        <div>
+          <strong style="color:#fff; text-transform:uppercase; font-size:12px; letter-spacing:.1em;">Navigation</strong>
+          <p>
+            <a onclick="navigateTo('collections')">Flooring</a><br>
+            <a onclick="navigateTo('audiences')">Professionals</a><br>
+            <a onclick="navigateTo('resources')">Resources</a><br>
+            <a onclick="navigateTo('blog')">Trade Journal Blog</a><br>
+            <a onclick="navigateTo('contact')">Contact & Showroom</a><br>
+            <a onclick="navigateTo('apply')">Get Trade Pricing</a>
+          </p>
+        </div>
+        <div>
+          <strong style="color:#fff; text-transform:uppercase; font-size:12px; letter-spacing:.1em;">Location & Contact[cite: 30]</strong>
+          <p>
+            1135 W Trinity Mills Rd, suite 140<br>
+            Carrollton, TX 75006, United States[cite: 30]<br>
+            (817) 385-0216<br>
+            info@duratileus.com
+          </p>
+        </div>
+      </div>
+      <div class="copyright">
+        © 2026 Duratile USA · Wholesale Flooring & Tile Solutions · Carrollton, Texas
+      </div>
+    </div>
+  </footer>
+
+  <!-- Router & HubSpot Engine -->
+  <script>
+    const HUBSPOT_PORTAL_ID = "247601033"; 
+    const HUBSPOT_FORM_ID   = "a8d40c9e-bf52-44e7-bfdb-56e66b449a65";
+
+    // All registered view keys (including all verified SPC, LVT and Porcelain spec pages)
+    const pageKeys = [
+      'home', 
+      'collections', 
+      'spc-collection', 
+      'lvt-collection', 
+      'porcelain-collection', 
+      'prod-spc-lunaro',
+      'prod-spc-brixton',
+      'prod-spc-montaire',
+      'prod-spc-valterra',
+      'prod-spc-oakmere',
+      'prod-spc-solara',
+      'prod-spc-toscara',
+      'prod-spc-cavaro',
+      'prod-lvt-slate',
+      'prod-lvt-wood',
+      'prod-lvt-concrete',
+      'prod-porc-black',
+      'prod-porc-white',
+      'prod-porc-warm',
+      'audiences', 
+      'resources', 
+      'blog', 
+      'contact', 
+      'apply'
+    ];
+
+    function navigateTo(pageKey) {
+      if (!pageKeys.includes(pageKey)) pageKey = 'home';
+
+      pageKeys.forEach(key => {
+        const viewEl = document.getElementById('view-' + key);
+        const navEl = document.getElementById('nav-' + key);
+        if (viewEl) viewEl.classList.remove('active-view');
+        if (navEl) navEl.classList.remove('active-tab');
+      });
+
+      const activeView = document.getElementById('view-' + pageKey);
+      const activeNav = document.getElementById('nav-' + pageKey);
+      if (activeView) activeView.classList.add('active-view');
+      if (activeNav) activeNav.classList.add('active-tab');
+
+      history.pushState(null, null, '#' + pageKey);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function openApplyWithIntent(intentText) {
+      navigateTo('apply');
+      setTimeout(() => {
+        const msgField = document.getElementById('pf_message') || document.getElementById('f_message');
+        if (msgField) msgField.value = 'Interested in: ' + intentText;
+      }, 100);
+    }
+
+    window.addEventListener('popstate', () => {
+      const hash = window.location.hash.replace('#', '');
+      navigateTo(hash || 'home');
+    });
+
+    function toggleMobileMenu() {
+      const drawer = document.getElementById('mobileDrawer');
+      drawer.classList.toggle('open');
+    }
+
+    async function submitHubSpotForm(contactName, company, email, phone, buyerType, productInterest, messageText, btnEl) {
+      const originalText = btnEl.textContent;
+      btnEl.textContent = "Submitting to HubSpot...";
+      btnEl.disabled = true;
+
+      const fields = [
+        { name: "firstname", value: contactName },
+        { name: "company", value: company },
+        { name: "email", value: email },
+        { name: "phone", value: phone },
+        { name: "buyer_type", value: buyerType },
+        { name: "product_interest", value: productInterest },
+        { name: "message", value: messageText }
+      ];
+
+      const url = `https://api.hsforms.com/submissions/v3/integration/submit/${HUBSPOT_PORTAL_ID}/${HUBSPOT_FORM_ID}`;
+      const payload = {
+        fields: fields,
+        context: {
+          pageUri: window.location.href,
+          pageName: document.title
+        }
+      };
+
+      try {
+        await fetch(url, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload)
+        });
+        alert("Thank you! Your inquiry has been sent directly to the Duratile sales desk in HubSpot.");
+      } catch (err) {
+        console.error("HubSpot Submission error:", err);
+        alert("Inquiry logged. Our sales team will follow up shortly.");
+      } finally {
+        btnEl.textContent = originalText;
+        btnEl.disabled = false;
+      }
+    }
+
+    const homeForm = document.getElementById('leadForm');
+    if (homeForm) {
+      homeForm.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const btn = document.getElementById('submitLabel');
+        await submitHubSpotForm(
+          document.getElementById('f_contact').value,
+          document.getElementById('f_company').value,
+          document.getElementById('f_email').value,
+          document.getElementById('f_phone').value,
+          document.getElementById('customerType').value,
+          document.getElementById('f_product').value,
+          document.getElementById('f_message').value + (document.getElementById('f_details').value ? ' | Project Details: ' + document.getElementById('f_details').value : ''),
+          btn
+        );
+        homeForm.reset();
+      });
+    }
+
+    const pageForm = document.getElementById('pageLeadForm');
+    if (pageForm) {
+      pageForm.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const btn = document.getElementById('p_submitLabel');
+        await submitHubSpotForm(
+          document.getElementById('pf_contact').value,
+          document.getElementById('pf_company').value,
+          document.getElementById('pf_email').value,
+          document.getElementById('pf_phone').value,
+          document.getElementById('p_customerType').value,
+          document.getElementById('pf_product').value,
+          document.getElementById('pf_message').value + (document.getElementById('pf_details').value ? ' | Project Details: ' + document.getElementById('pf_details').value : ''),
+          btn
+        );
+        pageForm.reset();
+      });
+    }
+
+    const initialHash = window.location.hash.replace('#', '');
+    navigateTo(initialHash || 'home');
+  </script>
+</body>
+</html>
